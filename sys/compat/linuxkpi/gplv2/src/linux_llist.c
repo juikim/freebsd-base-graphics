@@ -25,7 +25,7 @@
 #include <linux/kernel.h>
 #include <linux/export.h>
 #include <linux/llist.h>
-
+#include <asm/barrier.h>
 
 /**
  * llist_add_batch - add several linked entries in batch

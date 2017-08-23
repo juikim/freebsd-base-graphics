@@ -45,6 +45,7 @@
 #include <linux/atomic.h>
 #include <linux/spinlock.h>
 #include <linux/interrupt.h>
+#include <linux/dcache.h>
 
 struct module;
 struct kiocb;
@@ -66,11 +67,6 @@ struct pfs_node;
 #define	S_IWUGO	(S_IWUSR | S_IWGRP | S_IWOTH)
 
 typedef struct files_struct *fl_owner_t;
-
-struct dentry {
-	struct inode	*d_inode;
-	struct pfs_node	*d_pfs_node;
-};
 
 struct file_operations;
 

@@ -6,8 +6,9 @@
 #include <linux/slab.h>
 #include <linux/poll.h>
 #include <linux/fs.h>
+#include <linux/dcache.h>
 #include <asm/uaccess.h>
-
+#include <asm/processor.h>
 
 #pragma GCC warning "The whole relay channel system need review, fixing and testing!"
 
