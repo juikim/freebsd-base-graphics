@@ -2610,7 +2610,7 @@ static void i915_ggtt_insert_entries(struct i915_address_space *vm,
 	unsigned int flags = (cache_level == I915_CACHE_NONE) ?
 		AGP_USER_MEMORY : AGP_USER_CACHED_MEMORY;
 
-	intel_gtt_insert_sg_entries(pages, start >> PAGE_SHIFT, flags);
+	linux_intel_gtt_insert_sg_entries(pages, start >> PAGE_SHIFT, flags);
 
 }
 
